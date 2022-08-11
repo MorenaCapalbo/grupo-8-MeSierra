@@ -1,5 +1,6 @@
 # grupo-8-MeSierra
 URL del repositorio: https://github.com/MorenaCapalbo/grupo-8-MeSierra
+URL TRELLO: https://trello.com/trabajointegradorgrupo81
 
 Objetivo
 El sitio se trata de un ecommerce que ofrece hierbas serranas de las Sierras Cordobesas de Argentina.
