@@ -22,7 +22,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: antiquewhite;
+  background-color: #a7cdcc;
   padding: 10px;
   justify-content: center;
 }
@@ -61,7 +61,7 @@ nav {
 }
 main {
   width: 100vw;
-  background-color: antiquewhite;
+  background-color: #a7cdcc;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
