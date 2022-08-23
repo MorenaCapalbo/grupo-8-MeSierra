@@ -189,7 +189,54 @@ footer {
   height: 150px;
   margin: 10px;
 }
-
+.carrito-section {
+  background-color: white;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.product-carrito {
+  display: flex;
+  flex-direction: row;
+}
+.price-carrito {
+  width: 40vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.img-carrito {
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.img-carrito img {
+  width: 100px;
+  height: 100px;
+}
+.total-carrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: solid black 1px;
+  border-color: rgba(0, 0, 0, 30%);
+}
+.total-carrito h4{
+  width: 40vw;
+  display: inline-block;
+}
+.izquierda h4 {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+.derecha h4 {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 60px;
+}
 @media (min-width: 480px) {
   header {
     flex-direction: row;
