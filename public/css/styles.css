@@ -26,11 +26,16 @@ header {
   padding: 10px;
   justify-content: center;
 }
+.div-search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .div-search input {
-  width: 80vw;
+  width: 60vw;
   margin: 10px;
   border-radius: 10px;
-  text-align: center;
 }
 .botones {
   display: flex;
@@ -72,10 +77,14 @@ main {
 .banner-grande {
   background-color: white;
   width: 100vw;
-  height: 100px;
+  height: 300px;
   text-align: center;
   font-size: 12px;
   display: inline-block;
+}
+.banner-grande img {
+  width: 100%;
+  height: 100%;
 }
 .products {
   margin: 30px;
@@ -86,13 +95,16 @@ main {
   align-items: center;
 }
 article {
-  background-color: white;
+  background-color: black;
   width: 60vw;
   font-size: 12px;
   display: flex;
   flex-direction: column;
   padding: 10px;
   margin: 10px;
+  border: solid black 1px;
+  border-radius: 10px;
+  color: white;
 }
 article img {
   width: 100%;
@@ -104,7 +116,7 @@ article img {
   height: 225.34px;
 }
 article p {
-  font-size: 12px;
+  font-size: 17px;
   margin: 2px;
 }
 footer {
@@ -153,8 +165,9 @@ footer {
 }
 .article-details {
   width: 100%;
-  background-color: antiquewhite;
+  background-color: black;
   border-radius: 10px;
+  color: white;
 }
 .article-details ul li {
   width: 100%;
@@ -184,6 +197,20 @@ footer {
 }
 
 @media (min-width: 480px) {
+  header {
+    flex-direction: row;
+  }
+  .div-logo {
+    width: 40vw;
+  }
+  .div-search {
+    width: 40vw;
+    display: flex;
+    align-items: center;
+  }
+  .div-search input {
+    width: 100%;
+  }
   .products {
     flex-direction: row;
   }
