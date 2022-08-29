@@ -120,17 +120,6 @@ article p {
   font-size: 22px;
   margin: 2px;
 }
-
-.datos-user {
-  
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around;
-    margin-bottom: 100px;
-    margin-top: 50px;
-
-}
 footer {
   width: 100vw;
   padding: 20px;
