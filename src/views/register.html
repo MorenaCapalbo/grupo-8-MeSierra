@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -14,54 +14,77 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
-    <title>MeSierra</title>
-</head>
-<body>
+    <title>Me Sierra</title>
+  </head>
+  <body>
     <header>
-        <div class="div-logo">
-            <img src="/images/logo-2.jpeg" alt="logo">
-        </div>
-        <div class="div-search">
-            <input type="text">
-        </div>
-        <div>
+      <div class="div-logo">
+        <img src="/images/header1.png" alt="logo" />
+      </div>
+      <div class="div-search">
+        <input type="text" placeholder="Buscar producto" />
+      </div>
+      <div class="botones">
         <div class="div-cuenta">
-            <p>MI CUENTA</p>
+          <p>Mi cuenta<i class="fas fa-user"></i></p>
         </div>
         <div class="div-carrito">
-            <p>CARRITO</p>
+          <p>Carrito<i class="fas fa-shopping-cart"></i></p>
         </div>
-    </div>
-        <nav>
-            <li>ejemplo 1</li>
-            <li>ejemplo 2</li>
-            <li>ejemplo 3</li>
-            <li>ejemplo 4</li>
-        </nav>
+      </div>
+      <nav>
+        <ul>
+        <li>ejemplo 1</li>
+        <li>ejemplo 2</li>
+        <li>ejemplo 3</li>
+        <li>ejemplo 4</li>
+      </ul>
+      </nav>
     </header>
-    <main>
-        <div class="banner-grande">
-            <p>BANNER</p>
-        </div>
+    <main class ="datos-user">
+        <form action="/" method="GET">
+
+        
+            <label for="nombre">
+            <input type="text" name="usuario" id="nombre"  required placeholder="Usuario"> 
+            </label>
+        
+        
+            <label for="password">
+            <input type="password" name="password" id="password"  required placeholder="Contraseña"> 
+             </label>
+             <label for="Enviar">
+                <p>
+             <input class="submit" type="submit" value="Enviar"></input>
+          </p>
+          </label>
+    
+        </form>
     </main>
     <footer>
-        <div class="div-logo">
-            <img src="/images/logo-2.jpeg" alt="logo">
-        </div>
-        <div class="div-footer-boxes">
+      <div class="footer-logo">
+        <img src="/images/footer-logo.png" alt="logo" />
+      </div>
+      <div class="div-footer-boxes">
         <div class="div-footer-box">
-            <h5>CONTACTOS</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fuga sit inventore provident.</p>
-        </div>
-        <div class="div-footer-box">
-            <h5>MAS PRODUCTOS</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos doloribus dicta mollitia.</p>
+          <h5>CONTACTOS</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
         </div>
         <div class="div-footer-box">
-            <h5>NOSOTROS</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed perferendis ea nostrum ipsum.</p>
+          <h5>MAS PRODUCTOS</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
         </div>
-    </div>
+        <div class="div-footer-box">
+          <h5>NOSOTROS</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
