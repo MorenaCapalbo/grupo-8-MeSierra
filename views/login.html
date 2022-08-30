@@ -39,11 +39,13 @@
         <li>ejemplo 4</li>
       </nav>
     </header>
-    <main>
-      <div class="banner-grande">
-        <p>BANNER</p>
-      </div>
-    </main>
+    <section>
+      <form class="login-form" action="/login" method="GET">
+          <label for="usuario"></label><input type="text" name="usuario" placeholder="Tu nombre de usuario...">
+          <label for="contrasena"></label><input type="text" name="contrasena" placeholder="Tu contraseña...">
+          <button type="submit" href="/home">Enviar</button>
+      </form>
+  </section>
     <footer>
       <div class="div-logo">
         <img src="/images/logo-2.jpeg" alt="logo" />
