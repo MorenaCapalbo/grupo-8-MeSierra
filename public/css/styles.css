@@ -4,7 +4,7 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body {
-  background-color: gray;
+  background-color: white;
   margin: 0;
 }
 header {
@@ -124,10 +124,12 @@ article p {
 .login-form {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
   width: 50vw;
-  margin: auto;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: #A7CDCC;
+  margin: 20px;
+  border: solid;
 }
 
 .login-form input {
@@ -163,16 +165,20 @@ article p {
 }
 
 section {
-  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  background-color: white;
 }
 
 footer {
+  margin-top: 30%;
   width: 100vw;
   padding: 20px;
   background-color: black;
   display: flex;
   flex-wrap: wrap;
-  position: absolute;
   flex-direction: column;
   align-items: center;
 }

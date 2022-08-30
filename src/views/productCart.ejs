@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %> 
+  <body>
+    <%- include('./partials/header.ejs') %> 
+    <main>
+      <div class="banner-grande">
+        <img src="/images/bannerOficial.png" alt="">
+      </div>
+      <div class="carrito-section">
+       <div class="product-carrito">
+        <div class="img-carrito"><img src="/images/producto1.jpeg" alt="">
+        <p><strong>Hierba egipcia menta</strong></p>
+        </div>
+        <div class="price-carrito">
+          <p>$1200</p>
+        </div>
+       </div> 
+       <div class="product-carrito">
+        <div class="img-carrito"><img src="/images/producto2.jpeg" alt="">
+        <p><strong>Hierba boldo</strong></p>
+        </div>
+        <div class="price-carrito">
+          <p>$1200</p>
+        </div>
+       </div>
+       <div class="total-carrito">
+        <div class="izquierda"><h4>Total</h4></div>
+        <div class="derecha"><h4>$2400</h4></div>
+       </div>  
+      </div>
+      <div class="buy-section">
+      <div class="buy-info">
+        <h4>Descuento de 20% en tu primera compra</h4>
+      <img src="/images/mediosPago.jpeg" alt="">
+      </div>
+    </div>
+    </main>
+    <%- include('./partials/footer.ejs') %> 
+  </body>
+</html>
