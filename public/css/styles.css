@@ -162,6 +162,10 @@ article p {
   background-color: #0022AA;
 }
 
+section {
+  height: 500px;
+}
+
 footer {
   width: 100vw;
   padding: 20px;
