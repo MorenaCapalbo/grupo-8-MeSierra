@@ -13,14 +13,5 @@ app.set('views', __dirname + '/views')
 const mainRoutes = require("./routes/mainRoutes");
 app.use('/', mainRoutes);
 
-  app.get("/productCart", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/productCart.html"));
-  });
-  app.get("/productDetail", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/productDetail.html"));
-  });
-  
-  
-  
-  
-  
+const productsRoutes = require("./routes/productsRoutes");
+app.use('/products', productsRoutes);

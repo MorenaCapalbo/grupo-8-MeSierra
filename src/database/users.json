@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "Nombre": "Agustin",
+    "Apellido": "Lozano",
+    "Email": "aguspro99@gmail.com",
+    "Contraseña": "12345",
+    "Categoría": "vendedor",
+    "Imagen": "a completar"
+  },
+  {
+    "id": 2,
+    "Nombre": "German ",
+    "Apellido": "Lechrbauer",
+    "Email": "german.lecher2110@gmail.com",
+    "Contraseña": "54321",
+    "Categoría": "vendedor",
+    "Imagen": "a completar"
+  },
+  {
+    "id": 3,
+    "Nombre": "firstName",
+    "Apellido": "lastName",
+    "Email": "email",
+    "Contraseña": "password",
+    "Categoría": "category",
+    "Imagen": "image"
+  },
+  {
+    "id": 4,
+    "Nombre": "firstName",
+    "Apellido": "lastName",
+    "Email": "email",
+    "Contraseña": "password",
+    "Categoría": "category",
+    "Imagen": "image"
+  },
+  {
+    "id": 5,
+    "Nombre": "firstName",
+    "Apellido": "lastName",
+    "Email": "email",
+    "Contraseña": "password",
+    "Categoría": "category",
+    "Imagen": "image"
+  }
+]

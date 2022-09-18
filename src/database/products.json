@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Menta egipcia",
+    "id": 1,
+    "precio": 1200,
+    "descripcion": "Menta egipcia",
+    "descuento": "10%",
+    "image": "producto4.jpeg"
+  },
+  {
+    "name": "Boldo",
+    "id": 1,
+    "precio": 1200,
+    "descripcion": "Menta egipcia",
+    "descuento": "10%",
+    "image": "producto4.jpeg"
+  },
+  {
+    "name": "Marcela",
+    "id": 1,
+    "precio": 1200,
+    "descripcion": "Menta egipcia",
+    "descuento": "10%",
+    "image": "producto4.jpeg"
+  },
+  {
+    "name": "Te en saquitos",
+    "id": 1,
+    "precio": 800,
+    "descripcion": "Menta egipcia",
+    "descuento": "10%",
+    "image": "producto4.jpeg"
+  }
+]

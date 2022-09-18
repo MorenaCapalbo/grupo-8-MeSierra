@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %> 
+  <body>
+  <%- include('./partials/header.ejs') %> 
+
+    <main>
+      <div class="banner-grande">
+        <img src="/images/bannerOficial.png" alt="">
+      </div>
+      <div class="products">
+        <% for (let i = 0; i < products.length; i++) { %>
+            <% <article class="product">
+                <img class="te" src="/images/" alt="producto3" />
+                <p><strong></strong></p>
+                <p>$800</p>
+                <p>10% off</p>
+              </article>  %> 
+      <%  } %> 
+      </div>
+    </main>
+    <%- include('./partials/footer.ejs') %> 
+  </body>
+</html>
+
