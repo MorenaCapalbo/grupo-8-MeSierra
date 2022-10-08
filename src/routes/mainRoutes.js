@@ -12,4 +12,6 @@ router.get("/register", (req, res) => {
   res.render("register");
 });
 
+router.get("/list", productsController.list)
+
 module.exports = router;
