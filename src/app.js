@@ -13,5 +13,6 @@ app.set('views', __dirname + '/views')
 const mainRoutes = require("./routes/mainRoutes");
 app.use('/', mainRoutes);
 
-const productsRoutes = require("./routes/productsRoutes");
+const productsRoutes = require("./routes/products.js");
+
 app.use('/products', productsRoutes);

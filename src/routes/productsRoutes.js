@@ -18,7 +18,5 @@ router.get("/detail", (req, res) => {
   res.render("productDetail");
 });
 
-router.get("/list", productsController.list)
-
 
 module.exports = router;

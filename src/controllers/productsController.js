@@ -1,14 +1,21 @@
-const productsController = {
-    "list": function (req,res) {
-        const product = [
-            {id: 1, name: "Menta egipcia"},
-            {id: 2, name: "Boldo"},
-            {id: 3, name: "Marcela"},
-            {id: 4, name: "Te en Saquitos"},
-        ];
+const productsController =  {
+    list: (req,res) =>{
+        return res.send("Listado de productos desde el controlador")
+    },
 
-        res.render("productList.ejs", {"product": product});
-    }
-};
+    create: (req,res) => {
+        return res.send("Formulario de creacion de producto")
+    },
 
-module.exports = userController;
+    detail: (req,res) => {
+
+        return res.send("Detalle del producto " + req.params.idDetail)
+},
+
+    edit: (req,res) => {
+
+        return res.send ("Formulario de edicion de producto")
+}
+}
+
+module.exports = productsController;
