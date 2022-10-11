@@ -13,8 +13,10 @@ app.set('views', __dirname + '/views')
 const mainRoutes = require("./routes/mainRoutes");
 app.use('/', mainRoutes);
 
+
 // Ruta de products por GET
 
 const productsRoutes = require("./routes/products.js");
 
-app.use('/products', productsRoutes);
+app.use('/products', productsRoutes); 
+

@@ -11,7 +11,7 @@
   {
     "id": 2,
     "Nombre": "German ",
-    "Apellido": "Lechrbauer",
+    "Apellido": "Lecherbauer",
     "Email": "german.lecher2110@gmail.com",
     "Contraseña": "54321",
     "Categoría": "vendedor",
@@ -19,29 +19,29 @@
   },
   {
     "id": 3,
-    "Nombre": "firstName",
-    "Apellido": "lastName",
-    "Email": "email",
-    "Contraseña": "password",
-    "Categoría": "category",
+    "Nombre": "Morena",
+    "Apellido": "Capalbo",
+    "Email": "morenacapalbo@gmail.com",
+    "Contraseña": "qwertyu",
+    "Categoría": "Vendedor",
     "Imagen": "image"
   },
   {
     "id": 4,
-    "Nombre": "firstName",
-    "Apellido": "lastName",
-    "Email": "email",
-    "Contraseña": "password",
-    "Categoría": "category",
+    "Nombre": "Gonzalo",
+    "Apellido": "Rossi",
+    "Email": "Gonzalo.rossi@gmail.com",
+    "Contraseña": "mcfeliz",
+    "Categoría": "Vendedor",
     "Imagen": "image"
   },
   {
     "id": 5,
-    "Nombre": "firstName",
-    "Apellido": "lastName",
-    "Email": "email",
-    "Contraseña": "password",
-    "Categoría": "category",
+    "Nombre": "Lean",
+    "Apellido": "Gimenez",
+    "Email": "Lean.lamona@gmail.com",
+    "Contraseña": "34567",
+    "Categoría": "Vendedor",
     "Imagen": "image"
   }
 ]

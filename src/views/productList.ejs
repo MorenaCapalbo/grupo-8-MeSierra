@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EJS</title>
-</head>
-<body>
-  
-  <h1>Listado de productos</h1>
-  <h2> <%= titulo %></h2>
-</body>
+  <%- include('./partials/head.ejs') %> 
+  <body>
+  <%- include('./partials/header.ejs') %> 
+
+      <div class="products">
+        <article class="product">
+          <img src="/images/producto1.jpeg" alt="producto1" />
+          <p><strong>Menta egipcia</strong></p>
+          <p>$1200</p>
+          <p>10% off</p>
+        </article>
+        <article class="product">
+          <img src="/images/producto2.jpeg" alt="producto2" />
+          <p><strong>Boldo</strong></p>
+          <p>$1200</p>
+          <p>10% off</p>
+        </article>
+        <article class="product">
+          <img src="/images/producto3.jpeg" alt="producto3" />
+          <p><strong>Marcela</strong></p>
+          <p>$1200</p>
+          <p>10% off</p>
+        </article>
+        <article class="product">
+          <img class="te" src="/images/producto4.jpeg" alt="producto3" />
+          <p><strong>Te en saquitos</strong></p>
+          <p>$800</p>
+          <p>10% off</p>
+        </article>
+      </div>
+    </main>
+    <%- include('./partials/footer.ejs') %> 
+  </body>
 </html>
+
