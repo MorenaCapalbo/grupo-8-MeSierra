@@ -27,7 +27,7 @@ const productsController =  {
 },
 
     create: (req,res) =>{
-        return res.send("Formulario de creacion de producto");
+        return res.render("../views/productCreate");
 
 },
 
