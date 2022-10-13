@@ -1,6 +1,22 @@
+const fs = require("fs");
+const path = require("path");
+
+// Codigo para que pueda leer los productos del json
+
+const productsFilePath = path.join(__dirname, "../data/productsDataBase.json");
+const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+
+//Codigo que te transforma las comas (formato americano) en puntos (formato latam)
+
+const toThousand = n => n.toString().replace(/\B(?=(\d{3}) + (?!\d))/g, ".")
+
+
 const productsController =  {
     index: (req,res) =>{
-        return res.send("Listar todos los productos");
+        return res.render("products",{
+            products, toThousand
+
+        })
     },
 
     detail: (req,res) => {
@@ -37,5 +53,6 @@ const productsController =  {
 }
 
 }
+
 
 module.exports = productsController;

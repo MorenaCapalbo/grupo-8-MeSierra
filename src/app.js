@@ -27,3 +27,9 @@ const mainRoutes = require("./routes/mainRoutes");
 app.use('/', mainRoutes);
 app.use('/products', productsRoutes); 
 
+//Ruta error 404
+
+app.use((req, res) => {
+  res.status(404).render("not-found");
+})
+
