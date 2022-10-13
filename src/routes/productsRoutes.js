@@ -4,14 +4,32 @@ const path = require("path");
 
 const productsController = require ("../controllers/productsController")
 
-router.get("/list", productsController.list)
+// Se listan todos los productos de la base de datos JSON
 
-router.get("/create", productsController.create)
+router.get("/", productsController.index)
 
-router.get("/detail/:idDetail", productsController.detail)
+// Detalle del producto
 
-router.get("/:id/edit", productsController.edit)
+router.get("/detail/:id", productsController.detail);
 
-//Faltan rutas - /products (POST), /products/:id (PUT), /products/:id (DELETE), 
+// Mostrar formulario de creacion de un producto
+
+router.get("/create", productsController.create);
+
+// Recibir datos de formulario de la creacion de un producto
+
+router.get("/", productsController.store);
+
+// BOTON Modificar un producto
+
+router.get("/edit/:id", productsController.edit);
+
+//Recibir los datos de un formulario de edicion
+
+router.put("/:id", productsController.update);
+
+// BOTON BORRAR eliminar productos
+
+router.delete("/:id", productsController.destroy);
 
 module.exports = router;
