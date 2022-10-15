@@ -289,6 +289,9 @@ footer {
   justify-content: flex-end;
   padding-right: 60px;
 }
+#fotoUsuario{
+  display: flex;
+}
 @media (min-width: 480px) {
   header {
     flex-direction: row;

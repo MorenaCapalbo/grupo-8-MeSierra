@@ -4,7 +4,7 @@
   <body>
     <%- include('./partials/header.ejs') %> 
     <section>
-      <form class="login-form" action="/login" method="GET">
+      <form class="login-form" action="/login" method="POST">
           <label for="usuario"></label><input type="text" name="usuario" placeholder="Nombre de usuario">
           <label for="contrasena"></label><input type="text" name="contrasena" placeholder="Contraseña">
           <button type="submit" href="/home">Enviar</button>

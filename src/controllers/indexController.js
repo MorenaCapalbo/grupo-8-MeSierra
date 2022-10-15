@@ -5,7 +5,7 @@ const path = require("path");
 const indexController = {
     
     home: (req, res) => {
-        res.send("Esta es la home desde el controller");
+        return res.render("../views/home");
     },
 
     about: (req, res) => 
