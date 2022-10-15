@@ -3,9 +3,16 @@ const path = require("path");
 const app = express();
 const methodOverride = require("method-override");
 
+app.listen(3000, () => {
+  console.log("Servidor corriendo en el puerto 3000");
+});
+
+
 app.use(express.static('./public'));
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
+
+app.use(express.static(path.resolve(__dirname, "./public")));
 
 app.use(methodOverride("_method"));
 
@@ -17,15 +24,14 @@ app.use(express.urlencoded({ extended: false}));
 
 app.use(express.json());
 
-app.listen(3000, () => {
-  console.log("Servidor corriendo en el puerto 3000");
-});
 
-const productsRoutes = require("./routes/productsRoutes");
-const mainRoutes = require("./routes/mainRoutes");
+//Rutas
 
-app.use('/', mainRoutes);
-app.use('/products', productsRoutes); 
+const productsRouter = require("./routes/products");
+const indexRouter = require("./routes/index");
+
+app.use('/', productsRouter);
+app.use('/products', indexRouter); 
 
 //Ruta error 404
 
