@@ -1,35 +1,132 @@
 [
   {
-    "name": "Menta egipcia",
+    "name": "Termo Lumilagro",
     "id": 1,
-    "precio": 1200,
-    "descripcion": "Menta egipcia",
+    "precio": 1000,
+    "descripcion": "Termo Lumilagro",
     "descuento": "10%",
-    "image": "producto4.jpeg"
+    "image": ""
   },
   {
-    "name": "Boldo",
+    "name": "Termo Stanley",
     "id": 2,
-    "precio": 1200,
-    "descripcion": "Boldo",
+    "precio": 5000,
+    "descripcion": "Termo Stanley",
     "descuento": "10%",
-    "image": "producto4.jpeg"
+    "image": ""
   },
   {
-    "name": "Marcela",
+    "name": "Termo Waterdog",
     "id": 3,
-    "precio": 1200,
-    "descripcion": "Marcela",
+    "precio": 3000,
+    "descripcion": "Termo Waterdog",
     "descuento": "10%",
-    "image": "producto4.jpeg"
+    "image": ""
   },
   {
-    "name": "Te en saquitos",
+    "name": "Termo Discovery",
     "id": 4,
-    "precio": 800,
-    "descripcion": "Te en saquitos",
+    "precio": 4000,
+    "descripcion": "Termo Discovery",
     "descuento": "10%",
-    "image": "producto4.jpeg"
+    "image": ""
+  },
+  {
+    "name": "Playadito",
+    "id": 5,
+    "precio": 500,
+    "descripcion": "Yerba playadito 500gr",
+    "descuento": "10%",
+    "image": ""
+  },
+  {
+    "name": "Union",
+    "id": 6,
+    "precio": 500,
+    "descripcion": "Yerba Union 500gr",
+    "descuento": "10%",
+    "image": ""
+  },
+  {
+    "name": "La Merced",
+    "id": 7,
+    "precio": 500,
+    "descripcion": "Yerba La Merced 500gr",
+    "descuento": "10%",
+    "image": ""
+  },
+  {
+    "name": "Taraguí",
+    "id": 8,
+    "precio": 500,
+    "descripcion": "Yerba Taraguí 500gr",
+    "descuento": "10%",
+    "image": ""
+  },
+  {
+    "name": "Rosamonte",
+    "id": 9,
+    "precio": 500,
+    "descripcion": "Yerba Rosamonte 500gr",
+    "descuento": "10%",
+    "image": ""
+  },
+  {
+    "name": "Mañanita",
+    "id": 10,
+    "precio": 500,
+    "descripcion": "Yerba Mañanita 500gr",
+    "descuento": "10%",
+    "image": ""
+  },
+  {
+    "name": "Amanda",
+    "id": 11,
+    "precio": 500,
+    "descripcion": "Yerba Amanda 500gr",
+    "descuento": "10%",
+    "image": ""
+  },
+  {
+    "name": "Cachamate",
+    "id": 12,
+    "precio": 500,
+    "descripcion": "Yerba Cachamate 500gr",
+    "descuento": "10%",
+    "image": ""
+  },
+  {
+    "name": "Mate de plástico",
+    "id": 13,
+    "precio": 700,
+    "descripcion": "Mate de plástico",
+    "descuento": "10%",
+    "image": ""
+  },
+  {
+    "name": "Mate de vidrio",
+    "id": 14,
+    "precio": 1000,
+    "descripcion": "Mate de vidrio",
+    "descuento": "10%",
+    "image": ""
+  },
+  {
+    "name": "Mate de calabaza",
+    "id": 15,
+    "precio": 1500,
+    "descripcion": "Mate de calabaza",
+    "descuento": "10%",
+    "image": ""
+  },
+  {
+    "name": "Mate de metal",
+    "id": 16,
+    "precio": 500,
+    "descripcion": "Mate de metal",
+    "descuento": "10%",
+    "image": ""
   }
 ]
+
 
