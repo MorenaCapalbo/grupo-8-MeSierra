@@ -13,7 +13,7 @@
     "precio": 5000,
     "descripcion": "Termo Stanley",
     "descuento": "10%",
-    "image": ""
+    "image": "termo stanley.webp"
   },
   {
     "name": "Termo Waterdog",
@@ -21,7 +21,7 @@
     "precio": 3000,
     "descripcion": "Termo Waterdog",
     "descuento": "10%",
-    "image": ""
+    "image": "termo waterdog.webp"
   },
   {
     "name": "Termo Discovery",
@@ -29,7 +29,7 @@
     "precio": 4000,
     "descripcion": "Termo Discovery",
     "descuento": "10%",
-    "image": ""
+    "image": "termo discovery.webp"
   },
   {
     "name": "Playadito",
@@ -37,7 +37,7 @@
     "precio": 500,
     "descripcion": "Yerba playadito 500gr",
     "descuento": "10%",
-    "image": ""
+    "image": "union.webp"
   },
   {
     "name": "Union",
@@ -45,7 +45,7 @@
     "precio": 500,
     "descripcion": "Yerba Union 500gr",
     "descuento": "10%",
-    "image": ""
+    "image": "union.webp"
   },
   {
     "name": "La Merced",
@@ -53,7 +53,7 @@
     "precio": 500,
     "descripcion": "Yerba La Merced 500gr",
     "descuento": "10%",
-    "image": ""
+    "image": "la merced.webp"
   },
   {
     "name": "Taraguí",
@@ -61,7 +61,7 @@
     "precio": 500,
     "descripcion": "Yerba Taraguí 500gr",
     "descuento": "10%",
-    "image": ""
+    "image": "taragui.webp"
   },
   {
     "name": "Rosamonte",
@@ -69,7 +69,7 @@
     "precio": 500,
     "descripcion": "Yerba Rosamonte 500gr",
     "descuento": "10%",
-    "image": ""
+    "image": "rosamonte.webp"
   },
   {
     "name": "Mañanita",
@@ -77,7 +77,7 @@
     "precio": 500,
     "descripcion": "Yerba Mañanita 500gr",
     "descuento": "10%",
-    "image": ""
+    "image": "manianita.webp"
   },
   {
     "name": "Amanda",
@@ -85,7 +85,7 @@
     "precio": 500,
     "descripcion": "Yerba Amanda 500gr",
     "descuento": "10%",
-    "image": ""
+    "image": "amanda.webp"
   },
   {
     "name": "Cachamate",
@@ -93,7 +93,7 @@
     "precio": 500,
     "descripcion": "Yerba Cachamate 500gr",
     "descuento": "10%",
-    "image": ""
+    "image": "cachamate.webp"
   },
   {
     "name": "Mate de plástico",
@@ -101,15 +101,15 @@
     "precio": 700,
     "descripcion": "Mate de plástico",
     "descuento": "10%",
-    "image": ""
+    "image": "mate plastico.webp"
   },
   {
-    "name": "Mate de vidrio",
+    "name": "Mate de Madera",
     "id": 14,
     "precio": 1000,
-    "descripcion": "Mate de vidrio",
+    "descripcion": "Mate de Madera",
     "descuento": "10%",
-    "image": ""
+    "image": "mate madera.webp"
   },
   {
     "name": "Mate de calabaza",
@@ -117,7 +117,7 @@
     "precio": 1500,
     "descripcion": "Mate de calabaza",
     "descuento": "10%",
-    "image": ""
+    "image": "mate calabaza.webp"
   },
   {
     "name": "Mate de metal",
@@ -125,7 +125,7 @@
     "precio": 500,
     "descripcion": "Mate de metal",
     "descuento": "10%",
-    "image": ""
+    "image": "mate metal.webp"
   }
 ]
 

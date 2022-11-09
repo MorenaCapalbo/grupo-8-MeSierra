@@ -11,10 +11,10 @@
       <div class="products">
         <% products.forEach(product => { %>
         <article class="product">
-          <img src="/src/data/productsDataBase.json" alt="producto1" />
+          <img src="/images/products/<%= product.image %>" alt="producto1" />
           <p><strong><%= product.name %></strong></p>
-          <p><%= product.price %></p>
-          <p><%= product.discount %>  </p>
+          <p><%= product.precio %></p>
+          <p><%= product.descuento %>  </p>
         </article>
         <% }) %>
       </div>
