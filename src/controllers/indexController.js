@@ -1,16 +1,21 @@
 const fs = require("fs");
 const path = require("path");
 
+const productsFilePath = path.join(__dirname, "../data/productsDataBase.json");
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const indexController = {
-    
-    home: (req, res) => {
-        return res.render("../views/home");
-    },
+  home: (req, res) => {
+    return res.render("../views/home", {
+      products, toThousand
+    });
+  },
 
-    about: (req, res) => 
-    { res.send("Este es el about desde el controller");
-}
-}
+  about: (req, res) => {
+    return res.render("../views/about");
+  },
+};
 
 module.exports = indexController;
