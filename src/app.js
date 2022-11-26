@@ -10,6 +10,12 @@ app.listen(3000, () => {
   console.log("Servidor corriendo en el puerto 3000");
 });
 
+// sequelize
+const Sequelize = require ("sequelize");
+const sequelize = new Sequelize ("proyecto-integrador", "root", "",{
+  host: "localhost",
+  dialect: "mysql",
+})
 
 app.use(express.static('./public'));
 app.set('view engine', 'ejs');
