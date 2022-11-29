@@ -21,6 +21,7 @@ const indexController = require("../controllers/indexController");
 
 
 router.get("/", indexController.home);
+router.get("/cart", indexController.cart);
 router.get("/about", indexController.about);
 
 

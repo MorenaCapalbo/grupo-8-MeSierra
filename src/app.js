@@ -11,11 +11,12 @@ app.listen(3000, () => {
 });
 
 // sequelize
-const Sequelize = require ("sequelize");
-const Sequelize = new Sequelize ("proyecto-integrador", "root", "",{
-  host: "localhost",
-  dialect: "mysql",
-})
+//const Sequelize = require ("sequelize");
+//const Sequelize = new Sequelize ("proyecto-integrador", "root", "",{
+//  host: "localhost",
+//  dialect: "mysql",
+//})
+
 
 app.use(express.static('./public'));
 app.set('view engine', 'ejs');

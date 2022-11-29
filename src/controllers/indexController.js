@@ -16,6 +16,9 @@ const indexController = {
   about: (req, res) => {
     return res.render("../views/about");
   },
+  cart: (req, res) => {
+    return res.render("../views/productCart");
+  },
 };
 
 module.exports = indexController;
