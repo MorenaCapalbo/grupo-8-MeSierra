@@ -12,7 +12,7 @@ app.listen(3000, () => {
 
 // sequelize
 const Sequelize = require ("sequelize");
-const sequelize = new Sequelize ("proyecto-integrador", "root", "",{
+const Sequelize = new Sequelize ("proyecto-integrador", "root", "",{
   host: "localhost",
   dialect: "mysql",
 })
