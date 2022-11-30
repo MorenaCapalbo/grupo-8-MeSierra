@@ -1,5 +1,9 @@
+const { resolveInclude } = require("ejs");
 const fs = require("fs");
 const path = require("path");
+const db = require("../database/models");
+const sequelize = db.sequelize;
+
 
 // Codigo para que pueda leer los productos del json
 
@@ -13,9 +17,15 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3}) + (?!\d))/g, ".")
 
 const productsController =  {
     index: (req,res) =>{
-        return res.render("../views/products",{
-            products, toThousand
+        db.Producto.findAll({
+            include: [{association: "Marcas"}]
         })
+        .then (function (respuesta){
+            return res.send(respuesta);
+        })
+        // return res.render("../views/products",{
+        //     products, toThousand
+        // })
     },
 
     detail: (req,res) => {
