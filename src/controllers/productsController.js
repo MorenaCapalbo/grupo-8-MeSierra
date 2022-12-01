@@ -18,14 +18,14 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3}) + (?!\d))/g, ".")
 const productsController =  {
     index: (req,res) =>{
         db.Producto.findAll({
-            include: [{association: "Marcas"}]
+            include: [{association: "Marcas"},{association: "Categorias"}]
+
         })
         .then (function (respuesta){
-            return res.send(respuesta);
+            return res.render("products",{
+                respuesta, toThousand
+            })
         })
-        // return res.render("../views/products",{
-        //     products, toThousand
-        // })
     },
 
     detail: (req,res) => {

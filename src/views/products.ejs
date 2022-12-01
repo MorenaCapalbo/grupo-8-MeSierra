@@ -5,13 +5,15 @@
   <%- include('./partials/header.ejs') %> 
 
       <div class="products">
+        <% respuesta.forEach(producto => { %> 
         <article class="product">
-          <img src="/images/producto1.jpeg" alt="producto1" />
-          <p><strong>Menta egipcia</strong></p>
-          <p>$1200</p>
-          <p>10% off</p>
+       <img src="/images/producto1.jpeg" alt="producto1" />
+          <p><strong><%= producto.nombre_producto%></strong></p>
+          <p><%= producto.precio%></p>
+          <p><%= producto.descripcion%></p>
         </article>
-        <article class="product">
+        <% }) %> 
+        <!-- <article class="product">
           <img src="/images/producto2.jpeg" alt="producto2" />
           <p><strong>Boldo</strong></p>
           <p>$1200</p>
@@ -28,7 +30,7 @@
           <p><strong>Te en saquitos</strong></p>
           <p>$800</p>
           <p>10% off</p>
-        </article>
+        </article> -->
       </div>
     </main>
     <%- include('./partials/footer.ejs') %> 
