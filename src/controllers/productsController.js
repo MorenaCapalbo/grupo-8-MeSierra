@@ -32,13 +32,18 @@ const productsController = {
   },
 
   create: (req, res) => {
-    return res.render("../views/productCreate");
+    db.Marca.findAll()
+    .then((marcas)=> {
+      res.render("../views/productCreate", {
+        marcas
+      })
+    })
   },
 
   store: (req, res) => {
     console.log("pase por aca");
     let images = req.file ? req.file.filename : no - foto.jpg;
-
+    console.log(req.body.marca_id)
     db.Producto.create({
       nombre_producto: req.body.name,
       precio: req.body.price,
@@ -47,7 +52,7 @@ const productsController = {
       stock: req.body.stock,
       categoria_id: req.body.category,
       descripcion: req.body.description,
-      marca: req.body.marca,
+      marca: req.body.marca_id,
       imagenes: images,
     }).then((product) => {
       res.redirect("/products");
