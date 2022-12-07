@@ -26,7 +26,7 @@ router.get("/detail/:id", productsController.detail);
 // Mostrar formulario de creacion de un producto
 
 router.get("/create", productsController.create);
-router.post("/", upload.single("imagen"), productsController.create);
+router.post("/", upload.single("imagen"), productsController.store);
 
 // BOTON Modificar un producto
 

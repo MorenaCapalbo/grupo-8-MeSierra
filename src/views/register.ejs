@@ -3,7 +3,10 @@
   <%- include('./partials/head.ejs') %> 
   <body>
     <%- include('./partials/header.ejs') %> 
-    <section>
+    <section class="register-section">
+      <div class="centrado">
+      <h1>Registrate!</h1>
+    </div>
         <form class="register-form" action="/register" method="POST">
             <label for="nombre"><input type="text" name="nombre" placeholder="Nombre"></label>      
             <label for="apellido"><input type="text" name="apellido" placeholder="Apellido"></label>      

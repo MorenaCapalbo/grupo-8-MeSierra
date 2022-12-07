@@ -1,7 +1,19 @@
 * {
   box-sizing: border-box;
   list-style: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.centrado {
+  display: flex;
+  justify-content: center;
+}
+.product-create-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 body {
   background-color: white;
@@ -14,12 +26,11 @@ header {
   background-color: #a7cdcc;
   padding: 10px;
 }
-.mainAbout{
+.mainAbout {
   margin: auto;
   height: 80vh;
   width: 70vw;
   background-color: white;
-
 }
 .div-logo {
   width: 45vw;
@@ -134,22 +145,19 @@ article p {
   width: 50vw;
   align-content: center;
   flex-wrap: wrap;
-  background-color: #A7CDCC;
+  background-color: #a7cdcc;
   margin: 20px;
+  height: 50vh;
   border: solid;
+  justify-content: center;
 }
 
 .login-form input {
   height: 35px;
   padding: 12px 20px;
   margin: 15px 0;
-  border:rgb(184, 184, 184) solid 1px;
+  border: rgb(184, 184, 184) solid 1px;
   border-radius: 10px;
-}
-
-.register-form input:focus {
-  background-color: rgb(204, 237, 248);
-  border:rgb(172, 27, 27) solid 1px;
 }
 
 .login-form button {
@@ -168,7 +176,51 @@ article p {
 }
 
 .login-form button:hover {
-  background-color: #0022AA;
+  background-color: #0022aa;
+}
+.register-section {
+  margin: 50px;
+  flex-direction: column;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: #a7cdcc;
+  margin: 20px;
+  border: solid;
+  align-items: center;
+  justify-content: center;
+}
+.register-form input {
+  height: 35px;
+  padding: 12px 20px;
+  margin: 15px 0;
+  border: rgb(184, 184, 184) solid 1px;
+  border-radius: 10px;
+}
+.register-form button {
+  width: 40%;
+  background-color: #0f85d3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: auto;
+  margin-top: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+
+.register-form button:hover {
+  background-color: #0022aa;
+}
+#product-creator-form {
+  height: 70vh;
 }
 
 section {
@@ -177,10 +229,10 @@ section {
   flex-wrap: wrap;
   margin: auto;
   background-color: white;
+  height: 60vh;
 }
 
 footer {
-  margin-top: 30%;
   width: 100vw;
   padding: 20px;
   background-color: black;
@@ -188,6 +240,8 @@ footer {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  height: 30vh;
+  align-self: flex-end;
 }
 .footer-logo img {
   width: 90px;
@@ -202,7 +256,7 @@ footer {
   display: flex;
   flex-direction: row;
   color: white;
-}/* Product details */
+} /* Product details */
 
 .product-detail {
   margin: 30px;
@@ -234,7 +288,7 @@ footer {
 }
 .buy-section {
   display: flex;
-  flex-direction:column ;
+  flex-direction: column;
 }
 .buy-carrito {
   display: flex;
@@ -282,7 +336,7 @@ footer {
   border-top: solid black 1px;
   border-color: rgba(0, 0, 0, 30%);
 }
-.total-carrito h4{
+.total-carrito h4 {
   width: 40vw;
   display: inline-block;
 }
@@ -296,8 +350,14 @@ footer {
   justify-content: flex-end;
   padding-right: 60px;
 }
-#fotoUsuario{
+#fotoUsuario {
   display: flex;
+}
+/* users */
+.register-form {
+  display: flex;
+  height: 50vh;
+  align-self: center;
 }
 @media (min-width: 480px) {
   header {
@@ -345,5 +405,5 @@ footer {
   .product {
     width: 20vw;
     height: 300px;
-  } 
- }
+  }
+}
