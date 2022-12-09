@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const bcrypt = require("bcryptjs");
-const usuarios = require("../database/models/usuarios");
+const db = require("../database/models");
 
 // Codigo para que pueda leer los productos del json
 

@@ -2,7 +2,7 @@ const { resolveInclude } = require("ejs");
 const fs = require("fs");
 const path = require("path");
 const { formatWithOptions } = require("util");
-const db = require("../database/models/Index");
+const db = require("../database/models");
 const sequelize = db.sequelize;
 
 // Codigo para que pueda leer los productos del json
