@@ -28,7 +28,15 @@ const productsController = {
 
   detail: (req, res) => {
     const idProduct = req.params.id;
-    res.send("Detalle del producto " + idProduct);
+      db.Producto.findByPk(idProduct, {
+        include: [{ association: "Marcas" }, { association: "Categorias" }],
+      }).then(function (producto) {
+        return res.render("productDetail", {
+          producto,
+          toThousand,
+        });
+      });
+
   },
 
   create: (req, res) => {
@@ -52,9 +60,8 @@ const productsController = {
       stock: req.body.stock,
       categoria_id: req.body.category,
       descripcion: req.body.description,
-      marca: req.body.marca_id,
-      imagenes: images,
-    }).then((product) => {
+      marca_id: req.body.marca
+    }, {include: [{association: "Imagenes"}]}).then((product) => {
       res.redirect("/products");
     });
   },

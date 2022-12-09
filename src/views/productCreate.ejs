@@ -57,7 +57,7 @@
               <label for="marca" class="form-label">Marca:</label>
               <select name="marca" id="marca">
                 <% marcas.forEach(marca => { %>
-                  <option value="<%= marca.dataValues.id %> "><%= marca.dataValues.nombre_marca %> </option>
+                  <option value="<%= marca.id %> "><%= marca.nombre_marca %> </option>
                   <% }) %> 
               </select>
               <label for="description" class="form-label">Descipción:</label>
