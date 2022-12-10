@@ -48,20 +48,25 @@ const productsController = {
     })
   },
 
-  store: (req, res) => {
-    console.log("pase por aca");
-    let images = req.file ? req.file.filename : no - foto.jpg;
-    console.log(req.body.marca_id)
-    db.Producto.create({
+  store: async (req, res) => {
+    let imagesSelect = req.file ? req.file.filename : no-foto.jpg;
+    let NuevoProducto = 1;
+    await db.Producto.create({
       nombre_producto: req.body.name,
-      precio: req.body.price,
-      descuento: req.body.discount,
+      precio: Number(req.body.price),
+      descuento: Number(req.body.discount),
       estado: req.body.estado,
-      stock: req.body.stock,
-      categoria_id: req.body.category,
+      stock: Number(req.body.stock),
+      categoria_id:req.body.category,
       descripcion: req.body.description,
-      marca_id: req.body.marca
-    }, {include: [{association: "Imagenes"}]}).then((product) => {
+      marca_id: Number(req.body.marca)
+    }).then((producto) => {
+      NuevoProducto = producto
+    })
+      db.Imagen.create({
+        nombre_archivo: imagesSelect,
+        producto_id: Number(NuevoProducto.id)
+      }).then((product) => {
       res.redirect("/products");
     });
   },

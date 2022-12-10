@@ -1,20 +1,13 @@
 module.exports = (sequelize, DataTypes) => {
     let alias = 'Imagen' // esto deberÃ­a estar en singular
     let cols = {
-        id: {
-            type: DataTypes.INTEGER,
-            primaryKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },
+     
         nombre_archivo: {
-            type: DataTypes.STRING,
-            allowNull: false
+            type: DataTypes.STRING
         },
 
         producto_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false
+            type: DataTypes.INTEGER
         }
        
     }
@@ -30,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
     Imagen.associate = function(models) {
         Imagen.belongsTo(models.Producto, {
             as: "producto",
-            foreignKey: "product_id"
+            foreignKey: "producto_id"
         })
 
     }
