@@ -7,7 +7,7 @@
       <div class="products">
         <% respuesta.forEach(producto => { %> 
         <article class="product">
-       <img src="/images/producto1.jpeg" alt="producto1" />
+       <img src="/images/products/<%= producto.Imagenes[0].nombre_archivo%>" alt="producto1" />
           <p><strong><%= producto.nombre_producto%></strong></p>
           <p><%= producto.precio%></p>
           <p><%= producto.descripcion%></p>

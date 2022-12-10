@@ -1,12 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Edicion de productos desde EJS</h1>
-</body>
+<html lang="es">
+  <%- include('./partials/head.ejs', {title: 'Formulario de creación'}) %>
+  <body>
+    <%- include('./partials/header.ejs') %>
+      <section class="register-section">
+        <div class="centrado">
+          <h1>Formulario de edicion de productos</h1>
+        </div>
+        <form class="register-form" id="product-creator-form" action="/products/" method="PUT" enctype="multipart/form-data">
+              <label for="name" class="form-label">Nombre del producto:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ej: Zapatillas Reebok"
+                class="form-input"
+                value="<%= respuesta.nombre_producto %> "
+              />
+              <label for="price" class="form-label">Precio del producto:</label>
+              <input
+                type="text"
+                id="price"
+                name="price"
+                placeholder="Ej: 5678"
+                class="form-input"
+                value="<%= respuesta.precio %> "
+              />
+              <label for="estado" class="form-label">Estado:</label>
+              <input
+                type="text"
+                id="estado"
+                name="estado"
+                placeholder="Ej: 15"
+                class="form-input"
+                value="<%= respuesta.estado %> "
+              />
+              <label for="stock" class="form-label">stock:</label>
+              <input
+                type="number"
+                id="stock"
+                name="stock"
+                placeholder="Ej: 15"
+                class="form-input"
+                value="<%= respuesta.stock %> "
+              />
+              <label for="category" class="form-label">Categoría:</label>
+              <select name="category" id="category" class="form-input">
+                <option value="">Elegí</option>
+                <option value="yerbas">Yerba</option>
+                <option value="mates">Mate</option>
+                <option value="termos">Termo</option>
+              </select>
+              <label for="marca" class="form-label">Marca:</label>
+              <select name="marca" id="marca">
+                <% marcas.forEach(marca => { %>
+                  <option value="<%= marca.id %> "><%= marca.nombre_marca %> </option>
+                  <% }) %> 
+              </select>
+              <label for="description" class="form-label">Descipción:</label>
+              <textarea
+                name="description"
+                id="description"
+                class="form-input"
+              ></textarea>
+              <label for="imagen" class="form-label">imagen</label>
+              <input type="file" id="imagen" name="imagen" class="form-input" />
+              <button type="submit" class="buy-now-button">
+                Editar producto
+              </button>
+        </form>
+      </section>
+    <%- include('./partials/footer.ejs') %>
+  </body>
 </html>
