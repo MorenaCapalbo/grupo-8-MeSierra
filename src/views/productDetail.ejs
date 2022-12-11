@@ -11,11 +11,13 @@
         <article class="detail">
             <img src="/images/producto1.jpeg" alt="producto1" />
           <p>
-        <strong>Nombre de producto: <%= producto.nombre_producto %> </strong>
+        <strong style="font-size: 40px; height: 20vh;"><%= producto.nombre_producto %> </strong>
         <br><br>
-        Descripción de Producto: <%= producto.descripcion %> 
+        <strong style="font-size: 40px; height: 20vh;"> Descripción de Producto: </strong>
+        <br>
+        <%= producto.descripcion %>
          <br><br>
-         <strong>Precio Unitario: <%= producto.precio %> </strong>  
+         <strong style="font-size: 40px; height: 20vh;"><%= producto.precio %> </strong>  
         </p>
         </article>
       </div>

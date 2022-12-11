@@ -4,19 +4,15 @@
   <body>
   <%- include('./partials/header.ejs') %> 
 
-    <main>
-      <div class="banner-grande">
-        <img src="/images/bannerOficial.png" alt="">
-      </div>
       <div class="products">
-        <% products.forEach(product => { %>
+        <% respuesta.forEach(producto => { %> 
         <article class="product">
-          <img src="/images/products/<%= producto.Imagenes[0].nombre_archivo%>" alt="producto1" />
-          <p><strong><%= product.name %></strong></p>
-          <p><%= product.precio %></p>
-          <p><%= product.descuento %>  </p>
+       <img src="/images/products/<%= producto.Imagenes[0].nombre_archivo%>" alt="producto1" />
+          <p><strong><%= producto.nombre_producto%></strong></p>
+          <p><%= producto.precio%></p>
+          <p><%= producto.descripcion%></p>
         </article>
-        <% }) %>
+        <% }) %> 
       </div>
     </main>
     <%- include('./partials/footer.ejs') %> 

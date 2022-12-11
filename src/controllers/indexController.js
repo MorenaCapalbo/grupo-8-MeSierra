@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const db = require("../database/models");
 
 const productsFilePath = path.join(__dirname, "../data/productsDataBase.json");
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -12,7 +13,20 @@ const indexController = {
       products, toThousand
     });
   },
-
+  index: (req, res) => {
+    db.Producto.findAll({
+      include: [
+        { association: "Marcas" },
+        { association: "Categorias" },
+        { association: "Imagenes" },
+      ],
+    }).then(function (respuesta) {
+      return res.render("products", {
+        respuesta,
+        toThousand,
+      });
+    });
+  },
   about: (req, res) => {
     return res.render("../views/about");
   },
