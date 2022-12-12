@@ -22,7 +22,20 @@ const indexController = {
     });
     
   },
-
+  index: (req, res) => {
+    db.Producto.findAll({
+      include: [
+        { association: "Marcas" },
+        { association: "Categorias" },
+        { association: "Imagenes" },
+      ],
+    }).then(function (respuesta) {
+      return res.render("products", {
+        respuesta,
+        toThousand,
+      });
+    });
+  },
   about: (req, res) => {
     return res.render("../views/about");
   },
