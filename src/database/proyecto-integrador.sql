@@ -48,7 +48,7 @@ INSERT INTO `categorias` (`id`, `nombre_categoria`) VALUES
 --
 
 CREATE TABLE `imagenes` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTOINCREMENT,
   `nombre_archivo` varchar(45) DEFAULT NULL,
   `producto_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

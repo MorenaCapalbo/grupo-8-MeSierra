@@ -9,7 +9,8 @@
     "multer": "^1.4.5-lts.1",
     "mysql2": "^2.3.3",
     "sequelize": "^6.25.8",
-    "sequelize-cli": "^6.5.2"
+    "sequelize-cli": "^6.5.2",
+    "session": "^0.1.0"
   },
   "name": "grupo-8-mesierra",
   "version": "1.0.0",

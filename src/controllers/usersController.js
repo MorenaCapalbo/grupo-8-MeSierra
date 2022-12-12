@@ -39,10 +39,11 @@ const usersController =  {
         return res.render("../views/register");
 },
     register:async (req,res) =>{
+        console.log(req.body)
       let user = await db.Usuario.findOne({where:{email:req.body.email}})
       if(user && user.nombre_usuario == req.body.nombre_usuario){
         // Logica para por si ya exite un usuario con el mismo mail
-      }
+      } 
       db.Usuario.create({
         nombre_completo:req.body.nombre_completo,
         email: req.body.email,

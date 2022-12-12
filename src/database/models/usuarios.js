@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     nombre_completo: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     email: {
       type: DataTypes.STRING,
@@ -29,11 +29,11 @@ module.exports = (sequelize, DataTypes) => {
     },
     avatar: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     nombre_usuario: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     contrasena: {
       type: DataTypes.STRING,

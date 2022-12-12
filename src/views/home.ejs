@@ -7,17 +7,10 @@
       <div class="products">
         <% respuesta.forEach(producto => { %> 
         <article class="product">
-<<<<<<< HEAD
-          <img src="/images/products/<%= product.Imagenes[0].nombre_archivo%>" alt="producto1" />
-          <p><strong><%= product.nombre_producto %></strong></p>
-          <p><%= product.precio %></p>
-          <p><%= product.descuento %>  </p>
-=======
        <img src="/images/products/<%= producto.Imagenes[0].nombre_archivo%>" alt="producto1" />
           <p><strong><%= producto.nombre_producto%></strong></p>
           <p><%= producto.precio%></p>
           <p><%= producto.descripcion%></p>
->>>>>>> 36309c1c8fb12f0ecac22c87c2c03fd4445c348d
         </article>
         <% }) %> 
       </div>
