@@ -23,6 +23,7 @@ const productsController = {
         { association: "Imagenes" },
       ],
     }).then(function (respuesta) {
+      // return res.send(respuesta);
       return res.render("products", {
         respuesta,
         toThousand,

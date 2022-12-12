@@ -3,8 +3,13 @@ const path = require("path");
 const app = express();
 const methodOverride = require("method-override");
 
+//Session y cookie
+const session = require("express-session");
+const cookieParser = require("cookie-parser");
+
+
+
 const multer = require("multer");
-var bcrypt = require('bcryptjs');
 
 app.listen(3000, () => {
   console.log("Servidor corriendo en el puerto 3000");
@@ -21,6 +26,18 @@ app.listen(3000, () => {
 app.use(express.static('./public'));
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
+
+//Requerir session
+
+app.use(session({
+  secret: "secret",
+  resave: false,
+  saveUninitialized: true
+}))
+
+//La cookie queda seteada en toda la aplicacion
+
+app.use(cookieParser());
 
 app.use(express.static(path.resolve(__dirname, "./public")));
 
