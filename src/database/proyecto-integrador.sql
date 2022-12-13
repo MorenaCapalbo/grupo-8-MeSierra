@@ -140,7 +140,7 @@ INSERT INTO `productos` (`id`, `nombre_producto`, `estado`, `precio`, `stock`, `
 --
 
 CREATE TABLE `usuarios` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `rol` varchar(45) DEFAULT NULL,
   `nombre_completo` varchar(45) DEFAULT NULL,
   `email` varchar(45) DEFAULT NULL,

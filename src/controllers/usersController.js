@@ -19,9 +19,11 @@ const usersController =  {
         return res.render("../views/login");
 },
     login: (req,res) => {
+        console.log(req.body)
         db.Usuario.findOne({where: {nombre_usuario:req.body.nombre_usuario}})
         .then(function(user){
             let isPasswordOk = bcrypt.compareSync(req.body.contrasena, user.contrasena)
+        console.log(isPasswordOk)
         if(!isPasswordOk) {
             // decirle al usuario que uno de los campos esta mal
         }
@@ -49,7 +51,8 @@ const usersController =  {
         email: req.body.email,
         contrasena: bcrypt.hashSync(req.body.contrasena, 10),
         categoria: req.body.categoria,
-        fotoUsuario: req.body.fotoUsuario,
+        avatar: req.body.imagen,
+        nombre_usuario: req.body.nombre_usuario
       }) .then(function(){
         res.redirect("/")
       })
