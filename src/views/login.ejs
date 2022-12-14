@@ -3,7 +3,10 @@
   <%- include('./partials/head.ejs') %> 
   <body>
     <%- include('./partials/header.ejs') %> 
-    <section>
+    <section class="register-section">
+      <div class="centrado">
+        <h1>Ingresa con tu usuario!</h1>
+        </div>
       <form class="login-form" action="/users/login" method="POST">
           <label for="nombre_usuario"></label><input type="text" name="nombre_usuario" placeholder="Nombre de usuario">
           <label for="contrasena"></label><input type="text" name="contrasena" placeholder="Contraseña">

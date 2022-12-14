@@ -182,7 +182,11 @@ article p {
 }
 .register-section {
   margin: 50px;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 .register-form {
   display: flex;
@@ -252,7 +256,7 @@ footer {
 .div-footer-box {
   width: 18vw;
   margin: 10px;
-  font-size: 8px;
+  font-size: 14px;
 }
 .div-footer-boxes {
   display: flex;
@@ -271,10 +275,10 @@ footer {
   border-radius: 5px;
   border: solid white 1px;
 }
-.descripcion-texto{
+.descripcion-texto {
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .descripcion-texto p {
   padding: 80px;
@@ -418,6 +422,6 @@ footer {
   }
   .product {
     width: 20vw;
-    height: 300px;
+    height: 450px;
   }
 }
