@@ -4,12 +4,13 @@
   <body>
     <%- include('./partials/header.ejs') %> 
     <main>
-      <div class="banner-grande">
+      <div class="banner-grande" >
         <img src="/images/bannerOficial.png" alt="">
       </div>
+
       <div class="product-detail">
-        <article class="detail">
-            <img src="/images/producto1.jpeg" alt="producto1" />
+      <article class="detail">
+      <img src="/images/products/<%= producto.Imagenes[0].nombre_archivo%>" alt="producto1" />
           <p>
         <strong style="font-size: 40px; height: 20vh;"><%= producto.nombre_producto %> </strong>
         <br><br>

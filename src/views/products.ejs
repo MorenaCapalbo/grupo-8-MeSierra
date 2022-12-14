@@ -5,13 +5,16 @@
   <%- include('./partials/header.ejs') %> 
 
       <div class="products">
-        <% respuesta.forEach(producto => { %> 
+        <% respuesta.forEach(producto => { %>
+        <a href="/products/detail/<%= producto.id%>">
         <article class="product">
-       <img src="/images/products/<%= producto.Imagenes[0].nombre_archivo%>" alt="producto1" />
+        <img src="/images/products/<%= producto.Imagenes[0].nombre_archivo%>" alt="producto1" />
           <p><strong><%= producto.nombre_producto%></strong></p>
           <p>$<%= producto.precio%></p>
           <p><%= producto.descripcion%></p>
         </article>
+      </a>
+      
         <% }) %> 
       </div>
     </main>

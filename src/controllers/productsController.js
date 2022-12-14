@@ -34,7 +34,7 @@ const productsController = {
   detail: (req, res) => {
     const idProduct = req.params.id;
     db.Producto.findByPk(idProduct, {
-      include: [{ association: "Marcas" }, { association: "Categorias" }],
+      include: [{ association: "Marcas" }, { association: "Categorias" }, {association: "Imagenes"}],
     }).then(function (producto) {
       return res.render("productDetail", {
         producto,

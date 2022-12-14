@@ -6,12 +6,14 @@
 
       <div class="products">
         <% respuesta.forEach(producto => { %>
-        <article class="product">
+        <article class="product"><a href="/products/detail/<%= producto.id%>">
        <img src="/images/products/<%= producto.Imagenes[0].nombre_archivo%>" alt="producto1" />
+      </a>
           <p><strong><%= producto.nombre_producto%></strong></p>
           <p>$<%= producto.precio%></p>
           <p><%= producto.descripcion%></p>
         </article>
+        
         <% }) %>
       </div>
     </main>

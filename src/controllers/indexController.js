@@ -16,7 +16,7 @@ const indexController = {
         { association: "Imagenes" },
       ],
     }).then(function (products) {
-      return res.render("../views/home", {
+      return res.render("home", {
         products, toThousand
       });
     });
