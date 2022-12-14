@@ -271,22 +271,34 @@ footer {
   border-radius: 5px;
   border: solid white 1px;
 }
+.descripcion-texto{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descripcion-texto p {
+  padding: 80px;
+  height: 20px;
+}
 .detail {
   width: 80vw;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .detail img {
-  width: 50%;
-  height: 40%;
+  width: 35vh;
+  height: 40vh;
 }
 .detail p {
-  width: 40%;
+  width: 35vh;
   height: 20px;
   font-size: 12px;
   display: block;
   text-align: center;
+  margin-top: -50px;
 }
 .buy-section {
   display: flex;
