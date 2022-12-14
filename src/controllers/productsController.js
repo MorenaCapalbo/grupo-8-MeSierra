@@ -52,7 +52,7 @@ const productsController = {
   },
 
   store: async (req, res) => {
-    let imagesSelect = req.file ? req.file.filename : no - foto.jpg;
+    let imagesSelect = req.file ? req.file.filename : foto.jpg || foto.webp;
     let NuevoProducto = 1;
     await db.Producto.create({
       nombre_producto: req.body.name,
