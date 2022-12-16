@@ -7,8 +7,6 @@ const methodOverride = require("method-override");
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
 
-
-
 const multer = require("multer");
 
 app.listen(3000, () => {

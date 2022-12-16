@@ -20,7 +20,10 @@
               <option value="vendedor">vendedor</option>
             </select>
             <label id="fotoUsuario" for="imagen"><input type="file" name="imagen" /></label>
-            <button type="submit" href="/home">Enviar</button>
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
+            <label for="recordame">Recordame <input style="width: 20px; height: 20px;" type="checkbox" name="Recordame" id="recordame"></label>
+          </div>
+            <button type="submit" href="/home">Registrarse</button>
           </section>
         <%- include('./partials/footer.ejs') %> 
   </body>

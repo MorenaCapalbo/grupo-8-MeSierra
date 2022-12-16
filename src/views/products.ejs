@@ -3,7 +3,9 @@
   <%- include('./partials/head.ejs') %> 
   <body>
   <%- include('./partials/header.ejs') %> 
-
+  <div class="banner-grande">
+    <img src="/images/bannerOficial.png" alt="" />
+  </div>
       <div class="products">
         <% respuesta.forEach(producto => { %>
         <a href="/products/detail/<%= producto.id%>">

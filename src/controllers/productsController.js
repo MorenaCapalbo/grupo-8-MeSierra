@@ -4,7 +4,6 @@ const path = require("path");
 const { formatWithOptions } = require("util");
 const db = require("../database/models");
 const sequelize = db.sequelize;
-
 // Codigo para que pueda leer los productos del json
 
 const productsFilePath = path.join(__dirname, "../data/productsDataBase.json");

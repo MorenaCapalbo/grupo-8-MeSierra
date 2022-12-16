@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const bcrypt = require("bcryptjs");
 const db = require("../database/models");
+const { validationResult, check } = require("express-validator");
 
 // Codigo para que pueda leer los productos del json
 
@@ -41,7 +42,7 @@ const usersController =  {
         return res.render("../views/register");
 },
     register:async (req,res) =>{
-        console.log(req.body)
+    if(validationResult === true){
       let user = await db.Usuario.findOne({where:{email:req.body.email}})
       if(user && user.nombre_usuario == req.body.nombre_usuario){
         // Logica para por si ya exite un usuario con el mismo mail
@@ -56,6 +57,13 @@ const usersController =  {
       }) .then(function(){
         res.redirect("/")
       })
+    } else {
+        res.render("../views/register");
+        console.log(validationResult);
+    }
+    },
+    profileView: (req, res) => {
+        res.render("../views/profile")
     }
 }
 // validaciones y middlewares
