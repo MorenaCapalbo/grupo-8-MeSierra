@@ -5,7 +5,7 @@ const path = require('path');
 
 //------- Sequelize ----------------//
 
-const { User} = require('../database/models');
+const { Usuarios} = require('../database/models');
 
 
 module.exports = (req,res,next) =>{
@@ -17,7 +17,7 @@ module.exports = (req,res,next) =>{
         res.locals.usuario = req.session.usuario;
         return next();
     }else if(req.cookies.email){
-        User.findOne({
+        Usuarios.findOne({
             where: {
                email: req.cookies.email
             }

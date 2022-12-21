@@ -9,7 +9,12 @@
   </div>
   <div class="botones">
     <div class="div-cuenta">
-      <a href="/users/login">Ingresar<i class="fas fa-user"></i></a>
+      <% if (locals.usuario == false) { %>
+
+      <a href="/usuarios/login">Ingresar<i class="fas fa-user"></i></a>
+      <% }else {%>
+      <a href="#"><%= locals.usuarioLog %> <i class="fas fa-user"></i></a>
+      <% } %>
     </div>
     <div class="div-cuenta">
       <a href="/usuarios/registro">Registro<i class="fas fa-user"></i></a>
