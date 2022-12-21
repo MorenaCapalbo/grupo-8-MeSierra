@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
   <%- include('./partials/head.ejs') %> 
+  <link rel="stylesheet" href="../../../css/profile.css">
+</head>
   <body>
     <%- include('./partials/header.ejs') %> 
-    <section class="register-section">
-      <div class="centrado">
-        <h1>Perfil</h1>
-        </div>
-      <form class="login-form" action="/users/login" method="POST">
-        <div>
-            <h1></h1>
-        </div>
-          <button type="submit" href="/home">Editar perfil</button>
-          <button type="submit" href="/home">Cerrar sesion</button>
+    <section class="profile">
+      <div class="box-profile">
+        <div class="profile-image">
+           <img src="/images/banner.png">
+           </div>
+           <p class="tittle-user">Detalles de usuario</p> 
+           <ul class="info-profile">
+           <div>Nombre completo: <%= usuario.nombre_completo %> </div>    
+           <div>Email: <%= usuario.email %></div>
+           <div>Nombre de usuario: <%= usuario.nombre_usuario %></div>
+          </ul>
+      </div>
       </section>
       <%- include('./partials/footer.ejs') %> 
   </body>

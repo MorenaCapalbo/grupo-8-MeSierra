@@ -54,13 +54,13 @@ app.use(express.json());
 
 const productsRouter = require("./routes/products");
 const indexRouter = require("./routes/index");
-const usersRouter = require("./routes/users");
+const usersRouter = require("./routes/usuarios");
 const apiProductRouter = require ("./routes/api/product");
 const apiUserRouter = require("./routes/api/user");
 
 app.use('/', indexRouter);
 app.use('/products', productsRouter); 
-app.use('/users', usersRouter);
+app.use('/usuarios', usersRouter);
 app.use("/api/products", apiProductRouter);
 app.use("/api/users", apiUserRouter);
 

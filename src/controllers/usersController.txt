@@ -42,7 +42,6 @@ const usersController =  {
         return res.render("../views/register");
 },
     register:async (req,res) =>{
-    if(validationResult === true){
       let user = await db.Usuario.findOne({where:{email:req.body.email}})
       if(user && user.nombre_usuario == req.body.nombre_usuario){
         // Logica para por si ya exite un usuario con el mismo mail
@@ -55,16 +54,20 @@ const usersController =  {
         avatar: req.body.imagen,
         nombre_usuario: req.body.nombre_usuario
       }) .then(function(){
-        res.redirect("/")
+        res.redirect("/profile")
       })
-    } else {
-        res.render("../views/register");
-        console.log(validationResult);
-    }
     },
     profileView: (req, res) => {
         res.render("../views/profile")
-    }
+    },
+    detailProfile: (req, res) => {
+        const idUser = req.params.id;
+        db.Usuario.findByPk(idUser).then(function (usuario) {
+          return res.render("profile", {
+            usuario,
+          });
+        });
+      },
 }
 // validaciones y middlewares
 

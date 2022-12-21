@@ -19,7 +19,7 @@ module.exports = {
           })
         let respuestaCompleta = {
             count: userApi.length,
-            users: userApi
+            usuarios: userApi
         }
         res.json(respuestaCompleta);
         })

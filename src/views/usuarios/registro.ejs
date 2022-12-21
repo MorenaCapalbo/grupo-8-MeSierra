@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../../../css/styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  rel="stylesheet"
+/>
+<title>Me Sierra</title>
+</head>
+  <body>
+    <header>
+      <a href="/">
+        <div class="div-logo">
+          <img src="/images/header1.png" alt="logo" />
+        </div>
+      </a>
+      <div class="div-search">
+        <input type="text" placeholder="Buscar producto" />
+      </div>
+      <div class="botones">
+        <div class="div-cuenta">
+          <a href="/users/login">Ingresar<i class="fas fa-user"></i></a>
+        </div>
+        <div class="div-cuenta">
+          <a href="/usuarios/registro">Registro<i class="fas fa-user"></i></a>
+        </div>
+        <div class="div-carrito">
+          <p>Carrito<i class="fas fa-shopping-cart"></i></p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>ejemplo 1</li>
+          <li>ejemplo 2</li>
+          <li>ejemplo 3</li>
+          <li>ejemplo 4</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="register-section">
+      <div class="centrado">
+      <h1>Registrate!</h1>
+      </div>
+        <form class="register-form" action="/usuarios/registro" method="POST" enctype="multipart/form-data">
+            <!-- cambiar por nombre completo -->
+          <label for="nombre"><input type="text" name="nombre" placeholder="Nombre"></label>     
+          <label for="apellido"><input type="text" name="apellido" placeholder="Apellido"></label>  
+            <label for="email"><input type="email" name="email" placeholder="Email"></label>
+            <label for="contrasena"><input type="password" name="contrasena" placeholder="Contraseña"></label>
+            <label for="categoria">Elegir categoria</label>
+            <select name="categoria" id="categoria">
+              <option value="comprador">Comprador
+              </option>
+              <option value="vendedor">vendedor</option>
+            </select>
+            <label id="fotoUsuario" for="avatar"><input type="file" name="avatar" /></label>
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
+            <label for="recordame">Recordame <input style="width: 20px; height: 20px;" type="checkbox" name="Recordame" id="recordame"></label>
+          </div>
+            <button type="submit" href="/login">Registrarse</button>
+          </section>
+          <footer>
+            <div class="footer-logo">
+              <img src="/images/footer-logo.png" alt="logo" />
+            </div>
+            <div class="div-footer-boxes">
+              <div class="div-footer-box">
+                <h5>CONTACTO</h5>
+                <p>0800-999-333</p>
+                <p>contacto@me-sierra.com.ar</p>
+              </div>
+              
+              <div class="div-footer-box">
+                <h5>NOSOTROS</h5>
+                <p>Localizados en la zona centro de la Provincia de Buenos Aires, estamos estratégicamente localizados para el despacho de productos relacionados a la Yerba Mate producida en todo el pais. Teniendo acceso directo a los productores mas importantes del país y aquellos que elaboran artesanalmente sus productos. Amamos nuestro trabajo.</p>
+              </div>
+            </div>
+          </footer>          
+        <script src="/js/login.js"></script>
+  </body>
+</html>
+
+

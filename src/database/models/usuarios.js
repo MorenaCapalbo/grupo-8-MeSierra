@@ -1,38 +1,21 @@
-module.exports = (sequelize, DataTypes) => {
-  let alias = "Usuario"; // esto deberÃ­a estar en singular
+module.exports = (sequelize, dataTypes) => {
+  let alias = "Usuarios"; // esto deberÃ­a estar en singular
+
   let cols = {
     id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-      allowNull: false,
+        type: dataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
     },
-    rol: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    nombre_completo: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    nombre_usuario: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    contrasena: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    }
-  };
+    nombre: dataTypes.STRING,
+    apellido: dataTypes.STRING,
+    email: dataTypes.STRING,
+    contrasena: dataTypes.STRING,
+    avatar: dataTypes.STRING,
+    categoria: dataTypes.INTEGER
+};
 
-  let config = {
-    tableName: "usuarios",
-    timestamps: false,
-  };
-  const Usuario = sequelize.define(alias, cols, config);
-  return Usuario
+  const Usuarios = sequelize.define(alias, cols);
+  return Usuarios
+
 };
