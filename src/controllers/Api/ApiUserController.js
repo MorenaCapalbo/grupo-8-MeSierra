@@ -5,8 +5,9 @@ let sequelize = require("sequelize");
 module.exports = {
 
     index: (req, res) => {
-        db.Usuario.findAll({
+        db.Usuarios.findAll({
         }).then(function (respuesta) {
+          console.log(respuesta)
           let userApi = []
           respuesta.forEach(user =>{
             let item = {
