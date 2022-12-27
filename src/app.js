@@ -48,7 +48,8 @@ app.use(express.urlencoded({ extended: false}));
 //Codigo para usar el json dentro de los archivos
 
 app.use(express.json());
-
+const accesoMiddleware = require('./middlewares/acceso')
+app.use(accesoMiddleware)
 
 //Rutas
 

@@ -30,6 +30,7 @@ const indexController = {
         { association: "Imagenes" },
       ],
     }).then(function (respuesta) {
+      console.log(req.session)
       return res.render("products", {
         respuesta,
         toThousand,

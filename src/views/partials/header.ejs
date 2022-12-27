@@ -9,16 +9,20 @@
   </div>
   <div class="botones">
     <div class="div-cuenta">
-      <% if (locals.usuario == false) { %>
-
+      <% if (!locals.usuarioLog) { %>
       <a href="/usuarios/login">Ingresar<i class="fas fa-user"></i></a>
+      <div class="div-cuenta">
+        <a href="/usuarios/registro">Registro<i class="fas fa-user"></i></a>
+      </div>
       <% }else {%>
-      <a href="#"><%= locals.usuarioLog %> <i class="fas fa-user"></i></a>
-      <% } %>
+      <a href="#"
+        ><%= locals.usuarioLog.nombre %> <i class="fas fa-user"></i
+      ></a>
     </div>
     <div class="div-cuenta">
-      <a href="/usuarios/registro">Registro<i class="fas fa-user"></i></a>
+      <a href="/usuarios/logout">Cerrar sesion<i class="fas fa-user"></i></a>
     </div>
+    <% } %>
     <div class="div-carrito">
       <p>Carrito<i class="fas fa-shopping-cart"></i></p>
     </div>
