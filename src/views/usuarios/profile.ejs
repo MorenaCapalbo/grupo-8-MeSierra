@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <%- include('../partials/head.ejs') %> 
+  <link rel="stylesheet" href="../../../../css/profile.css">
+</head>
+  <body>
+    <%- include('../partials/header.ejs') %> 
+    <section class="profile">
+      <div class="box-profile">
+        <div class="detalle-usuario">
+        <div>
+          Detalles del usuario
+        </div>
+        <div class="profile-image">
+           <img src="../../../images/users/<%=locals.usuarioLog.avatar%>" alt="fotoPerfil">
+           </div>
+          </div>
+           <ul class="info-profile">
+           <div>Nombre: <%= locals.usuarioLog.nombre %> </div>    
+           <div>Apellido: <%= locals.usuarioLog.apellido %> </div>    
+           <div>Email: <%= locals.usuarioLog.email %></div>
+           <div>Categoria: <%= locals.usuarioLog.categoria %></div>
+          </ul>
+      </div>
+      </section>
+      <%- include('../partials/footer.ejs') %> 
+  </body>
+</html>

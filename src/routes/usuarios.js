@@ -142,6 +142,8 @@ Usuarios.findAll()
     console.log(errors);
   });
 
+router.get('/profile', usuariosController.perfil)
+
 //Esta es la ruta que se activa al momento que el usuario desea salir de la página
 router.get("/logout", usuariosController.salir);
 

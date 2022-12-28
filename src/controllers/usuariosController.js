@@ -11,7 +11,7 @@ const db = require("../database/models/");
 const User = db.User;
 
 const usuariosController = {
-  login: function (req, res) {
+  login: function (req, res) {      
     res.render(path.resolve(__dirname, "../views/usuarios/login"));
   },
   ingresar: (req, res) => {
@@ -41,7 +41,7 @@ const usuariosController = {
         });
       }
 
-      return res.redirect("/"); //Aquí ustedes mandan al usuario para donde quieran (Perfil- home)
+      return res.redirect("/usuarios/profile"); //Aquí ustedes mandan al usuario para donde quieran (Perfil- home)
     });
   },
 
@@ -85,5 +85,9 @@ const usuariosController = {
     req.session.destroy();
     res.redirect("/");
   },
-};
+  perfil: (req, res) => {
+    res.render(path.resolve(__dirname, "../views/usuarios/profile"));
+  }
+}
+
 module.exports = usuariosController;
